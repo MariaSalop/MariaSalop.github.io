@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Salop - Data Science & AI Portfolio</title>
+    
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Maria Salop - Data Science & AI Student Portfolio. Specializing in machine learning, computer vision, and NLP projects at Breda University.">
+    <meta name="keywords" content="Maria Salop, data science, AI, machine learning, portfolio, Breda University">
+    <meta name="author" content="Maria Salop">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Maria Salop - Data Science Portfolio">
+    <meta property="og:description" content="Explore my AI and data science projects">
+    <meta property="og:url" content="https://www.mariasalop.com">
+    
+    <!-- Favicon (optional - uncomment when you have one) -->
+    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
+</head>
+<body>
+    <!-- Optional Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Maria Salop</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+    <!-- Hero Section -->
+       <section class="hero" id="home">
+        <div class="hero-container" style="display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 800px;">
+            <div class="hero-content" style="width: 100%;">
+                <h1>Maria Salop</h1>
+                <h2>Data Science & AI Student</h2>
+                <p style="max-width: 600px; margin: 0 auto 2rem auto;">Data Science & AI student skilled in Python, SQL, Power BI, and NLP. Transforming complex data into actionable insights that drive operational efficiency.</p>
+                <div class="hero-buttons" style="justify-content: center;">
+                    <a href="#" class="btn btn-primary" onclick="downloadCV()">
+                        <span>📄</span> Download CV
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <span>🚀</span> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-contact">
+                        <span>✉️</span> Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <p class="section-subtitle fade-in">Bridging the gap between data and impact</p>
+            <div class="about-content fade-in">
+                <div class="skills-grid">
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">TensorFlow</div>
+                    <div class="skill-tag">PyTorch</div>
+                    <div class="skill-tag">SQL</div>
+                    <div class="skill-tag">Docker</div>
+                    <div class="skill-tag">Azure ML</div>
+                    <div class="skill-tag">Power BI</div>
+                    <div class="skill-tag">FastAPI</div>
+                    <div class="skill-tag">Computer Vision</div>
+                    <div class="skill-tag">NLP</div>
+                    <div class="skill-tag">MLOps</div>
+                    <div class="skill-tag">Deep Learning</div>
+                </div>
+                <div class="about-text">
+                    <p>I'm a dedicated Applied Data Science & Artificial Intelligence student with a strong foundation in machine learning, deep learning, and data analytics. My journey combines technical expertise with a passion for solving complex problems that matter.</p>
+                    <p>Through my academic projects and industry collaborations, I've developed expertise in computer vision, natural language processing, and end-to-end ML deployment. I believe in creating AI solutions that are not just technically sound but also ethically responsible and practically valuable.</p>
+                    <p>Currently seeking internship opportunities where I can contribute to innovative projects in AI, sustainable technology, or business intelligence while continuing to grow my skills in a professional environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            <p class="section-subtitle fade-in">Hands-on applications of AI to real-world challenges</p>
+            <div class="projects-grid">
+                
+                <!-- Project 1: Root Length Detection -->
+                <div class="project-card fade-in">
+                             <!-- Project Image Area -->
+                    <div class="project-image-container" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <img src="images/projects/root-detection.png" alt="Root Detection Project" class="project-img no-crop">
+                    </div>
+                    
+                    <div class="project-card-body">
+                        <h3>Root Length Detection</h3>
+                        <p class="project-description">
+                            Deep learning pipeline for plant root segmentation and measurement using U-Net architecture. Automated analysis of Petri dish images with CSV export functionality.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">U-Net</span>
+                            <span class="tech-badge">OpenCV</span>
+                            <span class="tech-badge">TensorFlow</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MariaSalop/UniversityProjects/tree/main/Computer_Vision-Root_Length_Detection" class="project-link" target="_blank">
+                                <span>🔗</span> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <span>📄</span> Paper
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Recycle Detection -->
+                <div class="project-card fade-in">
+                    <div class="project-image-container" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <img src="images/projects/recycle-system.png" alt="Recycle Detection System" class="project-img no-crop">
+                    </div>
+                    
+                    <div class="project-card-body">
+                        <h3>Recycle Detection System</h3>
+                        <p class="project-description">
+                            CNN-based image classifier for recyclable material categorization. Implements transfer learning for accurate classification of plastic, paper, metal, and cardboard.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Deep Learning</span>
+                            <span class="tech-badge">TensorFlow</span>
+                            <span class="tech-badge">Transfer Learning</span>
+                            <span class="tech-badge">CNN</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MariaSalop/UniversityProjects/tree/main/Recycle_Detection" class="project-link" target="_blank">
+                                <span>🔗</span> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <span>🚀</span> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: NAC Breda -->
+                <div class="project-card fade-in">
+                    <div class="project-image-container" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <img src="images/projects/nac-breda.png" alt="NAC Breda Analysis" class="project-img no-crop">
+                    </div>
+                    
+                    <div class="project-card-body">
+                        <h3>NAC Breda Player Evaluation</h3>
+                        <p class="project-description">
+                            Data analysis and predictive modeling for professional football club. Market value assessment and player development strategy with GDPR compliance.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Machine Learning</span>
+                            <span class="tech-badge">Data Analysis</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Ethics in AI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MariaSalop/UniversityProjects/tree/main/NAC_Breda_PlayerEvaluation" class="project-link">
+                                <span>🔗</span> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <span>📊</span> Report (NDA)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Air Quality Dashboard -->
+                <div class="project-card fade-in">
+                    <div class="project-image-container" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <img src="images/projects/air-quality.png" alt="Air Quality Dashboard" class="project-img no-crop">
+                    </div>
+                    
+                    <div class="project-card-body">
+                        <h3>Air Quality Dashboard</h3>
+                        <p class="project-description">
+                            Interactive Power BI dashboard analyzing global deaths from air pollution. Applied CRISP-DM methodology with data-driven storytelling and UX-focused design.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Power BI</span>
+                            <span class="tech-badge">Data Visualization</span>
+                            <span class="tech-badge">CRISP-DM</span>
+                            <span class="tech-badge">Business Intelligence</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MariaSalop/UniversityProjects/tree/main/AirQuality_GlobalDeaths" class="project-link" target="_blank">
+                                <span>🔗</span> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <span>📈</span> Dashboard
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Chatbot Research -->
+                <div class="project-card fade-in">
+                    <div class="project-image-container" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <img src="images/projects/chatbot.png" alt="Chatbot Research" class="project-img no-crop">
+                    </div>
+                    
+                    <div class="project-card-body">
+                        <h3>Chatbot Impact Research</h3>
+                        <p class="project-description">
+                            Research collaboration with Digiwerkplaats exploring chatbot effects on customer trust and satisfaction. Includes EDA, qualitative analysis, and policy recommendations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Research</span>
+                            <span class="tech-badge">EDA</span>
+                            <span class="tech-badge">Policy Analysis</span>
+                            <span class="tech-badge">Survey Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MariaSalop/UniversityProjects/tree/main/Chatbots_CustomerSatisfaction" class="project-link" target="_blank">
+                                <span>🔗</span> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <span>📄</span> Paper
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Emotion Classification — Research -->
+                <div class="project-card fade-in">
+                    <div class="project-image-container" style="background: linear-gradient(135deg, #7F7FD5 0%, #86A8E7 50%, #91EAE4 100%);">
+                        <img src="images/projects/emotion-research.png" alt="Emotion Classification Research" class="project-img no-crop">
+                    </div>
+                    
+                    <div class="project-card-body">
+                        <h3>Emotion Classification — Research</h3>
+                        <p class="project-description">
+                            End-to-end research pipeline for emotion classification: data annotation, speech-to-text (Whisper & AssemblyAI) with WER evaluation, feature extraction, prompt-based labeling, custom machine translation, transformer models, XAI, error analysis, and model card.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">NLP</span>
+                            <span class="tech-badge">Whisper</span>
+                            <span class="tech-badge">WER</span>
+                            <span class="tech-badge">Transformers</span>
+                            <span class="tech-badge">XAI</span>
+                            <span class="tech-badge">Hugging Face</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MariaSalop/UniversityProjects/tree/main/Emotion_Classification_research" class="project-link" target="_blank">
+                                <span>🔗</span> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <span>🔍</span> XAI & Error Analysis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Emotion Classification -->
+                <div class="project-card fade-in">
+                    <div class="project-image-container" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                        <img src="images/projects/emotion.png" alt="Emotion Classification" class="project-img no-crop">
+                    </div>
+                    
+                    <div class="project-card-body">
+                        <h3>Emotion Classification — Deployment</h3>
+                        <p class="project-description">
+                            Production-ready NLP pipeline: speech-to-text ➜ preprocessing ➜ optional translation ➜ RoBERTa emotion classifier. Exposed via a FastAPI REST API, packaged for local inference, containerized with Docker, deployed on Azure ML, and showcased with a Streamlit demo.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Deployment</span>
+                            <span class="tech-badge">FastAPI</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Azure ML</span>
+                            <span class="tech-badge">Transformers</span>
+                            <span class="tech-badge">Streamlit</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MariaSalop/UniversityProjects/tree/main/Emotion_Classification_Deployment" class="project-link" target="_blank">
+                                <span>🔗</span> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <span>🚀</span> Deployable API (FastAPI)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: Traffic Incident Prediction -->
+                <div class="project-card fade-in">
+                    <div class="project-image-container" style="background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);">
+                        <img src="images/projects/traffic.png" alt="Traffic Incident Prediction" class="project-img no-crop">
+                    </div>
+                    
+                    <div class="project-card-body">
+                        <h3>Incident Prediction Based on Weather</h3>
+                        <p class="project-description">
+                            Collaborated with ANWB to build machine learning models predicting traffic incidents using weather and historical data. Improved emergency response with actionable analytics.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">XGBoost</span>
+                            <span class="tech-badge">SQL</span>
+                            <span class="tech-badge">Feature Engineering</span>
+                            <span class="tech-badge">GridSearch</span>
+                            <span class="tech-badge">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="Code not publicly available">
+                                <span>🔒</span> Code (NDA)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title fade-in">Let's Connect</h2>
+                <p class="section-subtitle fade-in">I'm currently seeking internship opportunities in AI and Data Science</p>
+                <div class="contact-links fade-in">
+                    <!-- UPDATE THESE WITH YOUR ACTUAL LINKS -->
+                    <a href="https://www.linkedin.com/in/maria-salop-03a20a22a/" class="contact-link" target="_blank">
+                        <div class="contact-icon">
+                            <span style="font-size: 30px;">💼</span>
+                        </div>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:salopmaria37@gmail.com" class="contact-link">
+                        <div class="contact-icon">
+                            <span style="font-size: 30px;">✉️</span>
+                        </div>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://github.com/MariaSalop/UniversityProjects" class="contact-link" target="_blank">
+                        <div class="contact-icon">
+                            <span style="font-size: 30px;">📁</span>
+                        </div>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Maria Salop. Built with passion for AI & Data Science.</p>
+    </footer>
+
+    <!-- Link to JavaScript file -->
+    <script src="js/script.js"></script>
+</body>
+</html>
