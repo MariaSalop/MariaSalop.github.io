@@ -309,6 +309,30 @@ nav.scrolled {
 /* ===================================
    5. BUTTONS
    =================================== */
+.project-link.github-button {
+    background: linear-gradient(135deg, #24292e 0%, #040d21 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.project-link.github-button:hover {
+    background: linear-gradient(135deg, #040d21 0%, #24292e 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+/* GitHub icon styling */
+.github-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
 
 .btn {
     padding: 0.75rem 1.5rem;
