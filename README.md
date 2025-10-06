@@ -45,7 +45,7 @@ The portfolio showcases 10+ projects including:
 
 ## Live Demo
 
-Visit the live site at: [https://mariasalop.github.io/MariaSalop.github.io/](https://mariasalop.github.io/MariaSalop.github.io/)
+Visit the live site at: [mariasalop.github.io/](https://mariasalop.github.io/MariaSalop.github.io/)
 
 ## Key Sections
 
