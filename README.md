@@ -20,7 +20,7 @@ A clean, responsive portfolio website showcasing my data science and AI projects
 
 ## Project Structure
 
-
+```
 portfolio/
 ├── index.html
 ├── css/
@@ -32,7 +32,7 @@ portfolio/
 │   └── favicon.png
 ├── LICENSE
 └── README.md
-
+```
 
 ## Featured Projects
 
