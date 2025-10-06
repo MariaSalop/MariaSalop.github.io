@@ -1,5 +1,0 @@
-Copyright (c) 2025 Maria Salop
-
-All rights reserved.
-
-This code and its associated documentation are the exclusive property of Maria Salop. No part of this project may be reproduced, distributed, or transmitted in any form or by any means without prior written permission from the copyright holder.
