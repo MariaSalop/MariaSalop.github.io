@@ -7,6 +7,7 @@ A clean, responsive portfolio website showcasing my data science and AI projects
 - **Responsive Design** - Optimized for mobile, tablet, and desktop viewing
 - **Smooth Animations** - Fade-in effects and scroll-based animations
 - **Modern UI/UX** - Clean gradient backgrounds and card-based layout
+- **Cross-Platform Ready** - Favicons for all devices (iOS, Android, desktop browsers
 - **SEO Optimized** - Meta tags and semantic HTML for better search visibility
 - **Fast Performance** - No heavy frameworks, pure vanilla code
 - **Mobile Navigation** - Hamburger menu for smaller screens
@@ -29,14 +30,19 @@ portfolio/
 │   └── script.js
 ├── images/
 │   ├── projects/
-│   └── favicon.png
+│   ├── favicon.ico
+│   ├── favicon.svg
+│   ├── favicon-96x96.png
+│   ├── apple-touch-icon.png
+│   ├── android-chrome-192x192.png
+│   └── android-chrome-512x512.png
 ├── LICENSE
 └── README.md
 ```
 
 ## Featured Projects
 
-The portfolio showcases 10+ projects including:
+The portfolio showcases 10 projects including:
 - Computer Vision (Root Detection, Recycle Classification)
 - NLP & Deployment (Emotion Classification with FastAPI, Docker, Azure ML)
 - Machine Learning (Traffic Incident Prediction, Predictive Maintenance)
