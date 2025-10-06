@@ -40,7 +40,7 @@
    2. BASE STYLES
    =================================== */
 
-/* Replace your current body and main CSS with this */
+/* Replace current body and main CSS with this */
 html, body {
     height: 100%;
     margin: 0;
@@ -551,7 +551,7 @@ nav.scrolled {
     object-position: center; /* Centers the important part */
 }
 
-/* For images you don't want cropped */
+/* For images I don't want cropped */
 .project-img.no-crop {
     object-fit: contain;
     padding: 10px;
@@ -682,7 +682,7 @@ footer {
 }
 
 /* ===================================
-   11. LOADER (Optional)
+   11. LOADER
    =================================== */
 
 #loader {
