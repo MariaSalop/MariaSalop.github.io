@@ -121,8 +121,6 @@ const observer = new IntersectionObserver(function(entries) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-            // Optional: stop observing after animation
-            // observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
@@ -168,7 +166,7 @@ function downloadCV() {
     const link = document.createElement('a');
     
     // Set the path to your CV file
-    link.href = 'documents/CV_MariaSalop.pdf'; // Make sure this path matches your folder structure
+    link.href = 'documents/CV_MariaSalop.pdf'; 
     
     // Set the download filename
     link.download = 'Maria_Salop_CV.pdf';
@@ -177,8 +175,8 @@ function downloadCV() {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    
-    // Optional: Show a message
+
+    // Show a message
     console.log('Downloading CV...');
     
     // If CV doesn't exist yet, show an alert
@@ -191,7 +189,7 @@ function downloadCV() {
 // 8. PROJECT CARDS HOVER
 // ===================================
 
-// Add tilt effect on project cards (optional enhancement)
+// Add tilt effect on project cards
 document.querySelectorAll('.project-card').forEach(card => {
     card.addEventListener('mousemove', e => {
         const rect = card.getBoundingClientRect();
@@ -236,7 +234,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const footer = document.querySelector('footer p');
     if (footer) {
         const currentYear = new Date().getFullYear();
-        footer.innerHTML = `&copy; ${currentYear} Maria Salop. Built with passion for AI & Data Science.`;
+        footer.innerHTML = `&copy; ${currentYear} Maria Salop. All rights reserved. Built with passion for AI & Data Science.`;
     }
 });
 
@@ -244,7 +242,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // 11. SCROLL TO TOP
 // ===================================
 
-// Optional: Add scroll to top functionality
+// Add scroll to top functionality
 function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -266,7 +264,7 @@ console.log('%c Looking for a talented Data Science intern? Let\'s connect! 📧
 // 13. PERFORMANCE MONITORING
 // ===================================
 
-// Log page load time (optional)
+// Log page load time
 window.addEventListener('load', function() {
     const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
     console.log(`Page loaded in ${loadTime}ms ⚡`);
@@ -276,10 +274,9 @@ window.addEventListener('load', function() {
 // 14. ERROR HANDLING
 // ===================================
 
-// Global error handler (optional)
+// Global error handler
 window.addEventListener('error', function(e) {
     console.error('An error occurred:', e.error);
-    // You could send this to an error tracking service
 });
 
 // ===================================
