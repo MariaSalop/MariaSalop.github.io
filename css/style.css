@@ -422,24 +422,46 @@ nav.scrolled {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.skill-category h3 {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--secondary);
+    display: inline-block;
+    padding-bottom: 0.25rem;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
 }
 
 .skill-tag {
-    background: var(--bg-light);
-    padding: 0.75rem;
-    border-radius: 8px;
-    text-align: center;
+    background: white;
+    border: 1px solid var(--border);
+    color: var(--text-light);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
     font-weight: 500;
     transition: var(--transition);
-    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
+/* Hover effect for skills */
 .skill-tag:hover {
     border-color: var(--primary);
+    color: var(--primary);
     transform: translateY(-2px);
-    box-shadow: var(--card-shadow);
+    box-shadow: 0 4px 6px rgba(99, 102, 241, 0.1);
 }
 
 .about-text {
@@ -452,7 +474,168 @@ nav.scrolled {
 }
 
 /* ===================================
-   7. PROJECTS SECTION
+   7. EXPERIENCE SECTION (TIMELINE)
+   =================================== */
+
+/* 1. Background Color Strategy to separate sections */
+/* Ensure About is White, Experience is Light Gray, Projects is White */
+.experience {
+    padding: 5rem 2rem;
+    background: var(--bg-light); /* Gray background to separate from About */
+}
+
+/* OVERRIDE: Change Projects to White so it separates from Experience */
+.projects {
+    background: white !important;
+}
+
+/* 2. Timeline Structure */
+.timeline {
+    max-width: 800px;
+    margin: 4rem auto 0;
+    position: relative;
+    padding-left: 2rem; /* Space for mobile */
+}
+
+/* The vertical line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 4px; /* Align with dots */
+    width: 2px;
+    background: var(--border);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 2.5rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+/* 3. The Dots */
+.timeline-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--primary);
+    box-shadow: 0 0 0 4px white; /* Ring effect */
+    z-index: 2;
+}
+
+/* Special "Current" Dot Pulse Animation */
+.timeline-item.current .timeline-dot {
+    background: var(--secondary);
+    box-shadow: 0 0 0 4px white, 0 0 0 8px rgba(34, 211, 238, 0.2);
+    animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+    0% { box-shadow: 0 0 0 4px white, 0 0 0 0 rgba(34, 211, 238, 0.4); }
+    70% { box-shadow: 0 0 0 4px white, 0 0 0 10px rgba(34, 211, 238, 0); }
+    100% { box-shadow: 0 0 0 4px white, 0 0 0 0 rgba(34, 211, 238, 0); }
+}
+
+/* 4. The Card Content */
+.timeline-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+    border: 1px solid transparent; /* Prepare for hover border */
+}
+
+.timeline-item:hover .timeline-content {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-shadow);
+}
+
+/* Highlight the Current Role Card */
+.timeline-item.current .timeline-content {
+    border-left: 4px solid var(--secondary); /* Cyan accent line */
+}
+
+/* 5. Typography */
+.timeline-date {
+    display: inline-block;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    background: rgba(99, 102, 241, 0.1);
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.timeline-content h3 {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+.company-name {
+    display: block;
+    color: var(--text-light);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.timeline-content ul {
+    list-style-type: none; /* Remove default bullets */
+    margin-left: 0;
+}
+
+.timeline-content li {
+    margin-bottom: 0.8rem;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+/* Custom bullet points */
+.timeline-content li::before {
+    content: '▹';
+    color: var(--primary);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* "Current" Badge Styling */
+.badge-current {
+    background: var(--gradient);
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+/* ===================================
+   8. PROJECTS SECTION
    =================================== */
 
 .projects {
@@ -560,7 +743,7 @@ nav.scrolled {
 
 
 /* ===================================
-   8. CONTACT SECTION
+   9. CONTACT SECTION
    =================================== */
 
 .contact {
@@ -614,7 +797,7 @@ nav.scrolled {
 }
 
 /* ===================================
-   9. FOOTER
+   10. FOOTER
    =================================== */
 
 footer {
@@ -625,7 +808,7 @@ footer {
 }
 
 /* ===================================
-   10. ANIMATIONS
+   11. ANIMATIONS
    =================================== */
 
 @keyframes fadeInUp {
@@ -682,7 +865,7 @@ footer {
 }
 
 /* ===================================
-   11. LOADER
+   12. LOADER
    =================================== */
 
 #loader {
@@ -711,8 +894,10 @@ footer {
 }
 
 /* ===================================
-   12. RESPONSIVE DESIGN
+   13. RESPONSIVE DESIGN
    =================================== */
+
+
 
 /* Tablet Styles */
 @media (max-width: 1024px) {
@@ -801,7 +986,7 @@ footer {
 }
 
 /* ===================================
-   13. DARK MODE (Optional)
+   14. DARK MODE (Optional)
    =================================== */
 
 body.dark-mode {
@@ -822,7 +1007,7 @@ body.dark-mode .about {
 }
 
 /* ===================================
-   14. UTILITIES
+   15. UTILITIES
    =================================== */
 
 /* Text Utilities */
@@ -844,7 +1029,7 @@ body.dark-mode .about {
 .d-flex { display: flex; }
 
 /* ===================================
-   15. PRINT STYLES
+   16. PRINT STYLES
    =================================== */
 
 @media print {

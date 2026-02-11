@@ -57,6 +57,7 @@ Visit the live site at: [mariasalop.github.io](https://mariasalop.github.io/Mari
 
 - **Hero** - Introduction with name, title, and CTA buttons
 - **About** - Skills overview and personal statement
+- **Experience** - Professional timeline
 - **Projects** - Grid of project cards with descriptions and links
 - **Contact** - Social media and email links
 

@@ -254,10 +254,9 @@ function scrollToTop() {
 // 12. CONSOLE MESSAGE
 // ===================================
 
-// Fun console message for developers
 console.log('%c Welcome to Maria Salop\'s Portfolio! 🚀', 
     'color: #6366f1; font-size: 20px; font-weight: bold;');
-console.log('%c Looking for a talented Data Science intern? Let\'s connect! 📧', 
+console.log('%c Hiring for September 2026? Let\'s chat! 📧', 
     'color: #22d3ee; font-size: 14px;');
 
 // ===================================
